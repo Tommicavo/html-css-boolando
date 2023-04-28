@@ -147,4 +147,13 @@ header img{
     color: red;
 }
 
+.img_second{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
 
+.col_img:hover .img_second{
+    z-index: 0;
+}
