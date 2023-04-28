@@ -13,6 +13,7 @@
 .container{
     max-width: 1080px;
     margin: 0 auto;
+    border: 1px dashed black;
 }
 
 /* Generics */
@@ -65,4 +66,85 @@ header img{
     color: white;
     font-weight: 500;
 }
+
+/* Main */
+.row{
+    flex-wrap: wrap;
+    gap: 15px;
+}
+
+.col{
+    flex-basis: calc(100% / 3 - 10px);
+    position: relative;
+    border: 1px dashed black;
+}
+
+.col img{
+    max-width: 100%;
+    display: block;
+}
+
+.info_brand{
+    font-size: 12px;
+}
+
+.info_name{
+    font-size: 16px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.info_price{
+    font-size: 15px;
+}
+
+.info_price .price_less{
+    margin-right: 5px;
+    color: red;
+    font-weight: 600;
+}
+
+.info_price .price_more{
+    text-decoration: line-through;
+    color: black;
+}
+
+.label{
+    color: white;
+    font-size: 15px;
+    font-weight: 600;
+    padding: 3px 5px;
+}
+
+.label.sale{
+    background-color: red;
+}
+
+.label.sostain{
+    background-color: green;
+}
+
+.label.not_sale, .label.not_sostain{
+    display: none;
+}
+
+.col_label{
+    position: absolute;
+    left: 0;
+    bottom: 80px;
+}
+
+.col_heart{
+    padding: 10px;
+    color: black;
+    background-color: white;
+    position: absolute;
+    right: 0;
+    top: 10px;
+}
+
+.col_heart:hover{
+    color: red;
+}
+
 
