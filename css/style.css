@@ -15,3 +15,54 @@
     margin: 0 auto;
 }
 
+/* Generics */
+header{
+    justify-content: space-around;
+    align-items: center;
+    height: 80px;
+    background-color: #FF6900;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1;
+}
+
+body{
+    font-family: sans-serif;
+    padding-top: 90px;
+}
+
+li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 0  10px;
+}
+
+a{
+    text-decoration: none;
+}
+
+header img{
+    width: 30%;
+}
+
+/* Header */
+.div_gender, .div_profile{
+    flex-basis: 30%;
+    text-align: center;
+    padding: 0  5px;
+}
+
+.div_logo{
+    flex-grow: 1;
+    text-align: center;
+}
+
+
+.gender, .profile{
+    font-size: 20px;
+    color: white;
+    font-weight: 500;
+}
+
