@@ -45,9 +45,12 @@ body{
     padding-top: 90px;
 }
 
+ul{
+    display: flex;
+}
+
 li{
     list-style-type: none;
-    display: inline-block;
     padding-right: 5px;
 }
 
@@ -75,8 +78,8 @@ footer{
     text-align: left;
 }
 
-.div_header.right{
-    text-align: right;
+.div_header.right ul{
+    justify-content: flex-end;
 }
 
 .logo{
@@ -167,17 +170,19 @@ footer{
 
 .col_heart:hover{
     color: red;
+    cursor: pointer;
 }
 
-.img_second{
-    position: absolute;
-    top: 0;
-    left: 0;
-    z-index: -1;
+.col_img .img_second{
+    display: none;
 }
 
 .col_img:hover .img_second{
-    z-index: 0;
+    display: block;
+}
+
+.col_img:hover .img_first{
+    display: none;
 }
 
 /* Footer */
